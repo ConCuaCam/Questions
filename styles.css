@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F1F5F8;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Great Vibes', cursive;
+    color: #C59D5F;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 64px;
+    letter-spacing: 0.25rem;
+}
+
+.accordion {
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+}
+
+.accordion-item {
+    width: 620px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 24px 24px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.accordion-item-header {
+    padding: 0 0 16px;
+    color: #102A42;
+    letter-spacing: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-item-header .icon {
+    color: #C59D5F;
+    font-size: 1.5rem;
+    transition:  all 0.3s linear;
+}
+
+.accordion-item-header .icon .minus-icon {
+    display: none;
+}
+
+.accordion-item-header .icon .minus-icon.active {
+    display: block;
+}
+
+.accordion-item-header .icon .plus-icon.active {
+    display: none;
+}
+
+.accordion-item-header .icon:hover{
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.answer {
+    padding: 16px 0 24px;
+    color: #617D98;
+    border-top: 1px solid #617D98;
+    display: none;
+}
+
+.answer.active {
+    display: block;
+}
+
